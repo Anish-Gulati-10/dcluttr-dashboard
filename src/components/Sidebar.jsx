@@ -15,6 +15,14 @@ import {
   settings,
   users,
 } from "../../public/assets/icons";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export default function Sidebar() {
   const [selectedBrand, setSelectedBrand] = useState("Perfora");
@@ -88,15 +96,25 @@ export default function Sidebar() {
         <div className="flex flex-col flex-1">
           {/* Collapsible section for the brand name and caret icon */}
           <div className="bg-white pb-5 flex gap-4 px-2.5">
-            <div className="border border-[#0000001F] flex gap-[46px] items-center rounded-[12px] bg-[#FDFDFD] p-1.5">
-              <div className="flex gap-2 items-center">
-                <div className="flex-center bg-[#309E96] text-xs p-[5px] font-semibold text-white rounded-[7px]">
-                  SS
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <div className="border border-[#0000001F] flex gap-[46px] items-center rounded-[12px] bg-[#FDFDFD] p-1.5">
+                  <div className="flex gap-2 items-center">
+                    <div className="flex-center bg-[#309E96] text-xs p-[5px] font-semibold text-white rounded-[7px]">
+                      SS
+                    </div>
+                    <p className="font-semibold text-sm">Test_brand</p>
+                  </div>
+                  <Image src={caretUpDown} alt="caretUpDown" />
                 </div>
-                <p className="font-semibold text-sm">Test_brand</p>
-              </div>
-              <Image src={caretUpDown} alt="caretUpDown" />
-            </div>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-[var(--radix-popper-anchor-width)] border-none shadow-md" sideOffset={4}>
+                <DropdownMenuItem>Test_brand 1</DropdownMenuItem>
+                <DropdownMenuItem>Test_brand 2</DropdownMenuItem>
+                <DropdownMenuItem>Test_brand 3</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <Image
               src={collapse}
               alt="collapse"
