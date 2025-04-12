@@ -100,7 +100,7 @@ export default function Sidebar() {
             <Image
               src={collapse}
               alt="collapse"
-              onClick={() => setIsCollapsed(!isCollapsed)}
+              onClick={() => {setIsCollapsed(!isCollapsed); setSelectedBrand("")}}
               className="cursor-pointer"
             />
           </div>

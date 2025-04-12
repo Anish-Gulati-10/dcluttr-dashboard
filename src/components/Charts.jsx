@@ -4,7 +4,6 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 import Image from "next/image";
 import { arrowUp } from "../../public/assets/icons";
 import {LineChartCard} from "./LineChartCard";
-import {DonutChartCard} from "./DonutChartCard";
 import { DonutChart } from "./piechart";
 
 
