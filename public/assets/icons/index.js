@@ -1,3 +1,11 @@
 export { default as arrowUp } from "./arrowUp.svg";
 export { default as arrowDown } from "./arrowDown.svg";
 export { default as caretDown } from "./caretDown.svg";
+export { default as plus } from "./plus.svg";
+export { default as users } from "./users.svg";
+export { default as collapse } from "./collapse.svg";
+export { default as caretUpDown } from "./caretUpDown.svg";
+export { default as home } from "./home.svg";
+export { default as channels } from "./channels.svg";
+export { default as creatives } from "./creatives.svg";
+export { default as settings } from "./settings.svg";

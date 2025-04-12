@@ -1,5 +1,6 @@
 import { Mulish } from 'next/font/google';
 import './globals.css';
+import Sidebar from '@/components/Sidebar';
 
 const mulish = Mulish({
   subsets: ['latin'],
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={mulish.variable}>
       <body className="font-mulish antialiased flex">
-        <div className='w-72 bg-[#F8F8F8]' />
+        <Sidebar />
         {children}
       </body>
     </html>
