@@ -109,7 +109,7 @@ export function DonutChart() {
                       className="text-xs text-[#7D7D7E]">
                       <tspan x={viewBox.cx} y={viewBox.cy-50} className="text-xs text-[#7D7D7E]">Total</tspan>
                       <tspan x={viewBox.cx} y={viewBox.cy-30} className="text-lg text-black font-bold">₹68.2L</tspan>
-                      <tspan x={viewBox.cx} y={viewBox.cy-5} className="text-[#1D874F] font-medium"> <ArrowUp /> 2.2%</tspan>
+                      <tspan x={viewBox.cx} y={viewBox.cy-5} className="text-[#1D874F] font-medium"> <ArrowUp />↑ 2.2%</tspan>
                     </text>                
                   );
                 }

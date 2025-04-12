@@ -6,6 +6,7 @@ import {
   Table,
   TableBody,
   TableCell,
+  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
@@ -57,7 +58,7 @@ const tableData = [
   },
 ];
 
-export default function FixedTable() {
+export default function SkuTable() {
   const [selectedRows, setSelectedRows] = useState([
     "Protein Bar 100g",
     "Choco Bar 100g",
@@ -108,7 +109,7 @@ export default function FixedTable() {
   return (
     <div className="border border-[#F1F1F1] bg-white rounded-xl overflow-hidden shadow-[0px_1px_0px_rgba(0,0,0,0.12)]">
       <div className="overflow-x-auto">
-        <div className="max-h-96 overflow-y-auto relative ">
+        <div className="overflow-y-auto relative ">
           <Table className="border-collapse w-full">
             <TableHeader className="sticky top-0 z-10 text-sm text-[#013025]">
               <TableRow>
@@ -198,6 +199,18 @@ export default function FixedTable() {
                 );
               })}
             </TableBody>
+            <TableFooter>
+              <TableRow className={"text-[15px] font-bold text-[#0A090B] text-center bg-white"}>
+                <TableCell className={"text-left border-r border-[#F1F1F1] px-3 py-4"}>Total</TableCell>
+                <TableCell>₹2,93,132.12</TableCell>
+                <TableCell>16%</TableCell>
+                <TableCell className={"border-r border-[#F1F1F1]"}>2931</TableCell>
+                <TableCell>8.3</TableCell>
+                <TableCell>61,985</TableCell>
+                <TableCell>2,61,768</TableCell>
+                <TableCell>1.90%</TableCell>
+              </TableRow>
+            </TableFooter>
           </Table>
         </div>
       </div>

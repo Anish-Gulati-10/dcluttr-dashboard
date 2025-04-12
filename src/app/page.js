@@ -1,4 +1,5 @@
 import Charts from "@/components/Charts";
+import CityTable from "@/components/cityTable";
 import DateRangePicker from "@/components/DateRangePicker";
 import FilterDropdown from "@/components/FilterDropdown";
 import SkuTable from "@/components/SkuTable";
@@ -50,7 +51,7 @@ export default function Home() {
             </div>
             <FilterDropdown />
           </div>
-          <SkuTable />
+          <CityTable />
         </div>
       </section>
     </main>
