@@ -1,5 +1,7 @@
 import Charts from "@/components/Charts";
 import DateRangePicker from "@/components/DateRangePicker";
+import FilterDropdown from "@/components/FilterDropdown";
+import SkuTable from "@/components/SkuTable";
 import StoreSelector from "@/components/StoreSelector";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
@@ -29,6 +31,26 @@ export default function Home() {
         </div>
         <div id="data" className="p-6 flex flex-col gap-12">
           <Charts />
+        </div>
+        <div className="flex flex-col gap-6 p-6">
+          <div className="flex justify-between items-center ">
+            <div>
+              <h2 className="text-xl font-bold text-[#031B15]">SKU level data</h2>
+              <p className="text-sm text-[#4F4D55] mt-1">Analytics for all your SKUs</p>
+            </div>
+            <FilterDropdown />
+          </div>
+          <SkuTable />
+        </div>
+        <div className="flex flex-col gap-6 p-6">
+          <div className="flex justify-between items-center ">
+            <div>
+              <h2 className="text-xl font-bold text-[#031B15]">City level data</h2>
+              <p className="text-sm text-[#4F4D55] mt-1">Analytics for all your Cities</p>
+            </div>
+            <FilterDropdown />
+          </div>
+          <SkuTable />
         </div>
       </section>
     </main>
