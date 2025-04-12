@@ -75,11 +75,12 @@ const chartConfig = {
 export function DonutChart() {
 
   return (
-    <div>
+    <div className="relative overflow-hidden flex flex-col flex-1">
+      {/* <div className="relative w-full h-[144px] overflow-hidden">
       <ChartContainer
         config={chartConfig}
-        className="mx-auto aspect-square max-h-[250px] relative">
-        <PieChart>
+        className="relative flex-center">
+        <PieChart height={104} className="absolute top-0 left-0">
           <ChartTooltip
             cursor={false}
             content={<ChartTooltipContent hideLabel />}
@@ -118,40 +119,35 @@ export function DonutChart() {
           </Pie>
           
         </PieChart>
-        {/* <div className="absolute bg-red-500 mx-auto">
-        <div className="flex items-center gap-1 text-[#1D874F] text-xs font-medium">
-        <Image src={arrowUp} alt="Arrow Up" width={12} height={12} />
-        2.2%
-        </div>
-        </div> */}
       </ChartContainer>
-
-      
+      </div> */}
+      <Image src="/pieChart.png" width={193} height={104} className="mx-auto" alt="City Chart"/>
 
       {/* Breakdown */}
-      <div className="w-full space-y-2">
-        {chartData.map((city, index) => (
+      <div className="w-full flex flex-1 flex-col justify-around pt-5">
+        {chartData.map((city) => (
           <div
             key={city.name}
-            className="flex items-center justify-between text-sm"
+            className="flex items-center justify-between text-base py-1"
           >
             <div className="flex items-center gap-2">
               <span
-                className="w-2.5 h-2.5 rounded-full"
+                className="w-1.5 h-1.5 rounded-full"
                 style={{ backgroundColor: city.color }}
               />
-              <span className="text-[#515153] font-normal">{city.name}</span>
+              <span className="text-[#7D7D7E] font-normal">{city.name}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="font-medium text-[#171717]">
+
+            <div className="flex items-center gap-1.5 ">
+              <span className="font-bold text-black">
                 ₹{city.value}L
               </span>
-              <span className="text-[#8C9198] text-xs font-medium">
+              <span className="text-[#7D7D7E] bg-[#F7F7F7] py-0.5 px-1">
                 {city.percent}%
               </span>
               <span
-                className={`flex items-center text-xs font-medium ${
-                  city.change >= 0 ? "text-green-600" : "text-red-500"
+                className={`flex items-center font-medium ${
+                  city.change >= 0 ? "text-[#1D874F]" : "text-[#F31D1D]"
                 }`}
               >
                 {city.change >= 0 ? <Image src={arrowUp} alt="Arrow Up" /> : <Image src={arrowDown} alt="Arrow Down" />}

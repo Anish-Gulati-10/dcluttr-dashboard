@@ -77,7 +77,7 @@ export default function Sidebar() {
 
         <div className="px-3 flex flex-col gap-4 items-center">
           <Image src={users} alt="Users" />
-          <div className="bg-[#9106FF] border border-[#FFFFFF1A] rounded-full w-7 h-7 flex-center font-semibold text-xs text-white">
+          <div className="bg-[#9106FF] border border-[#FFFFFF1A] rounded-full w-7 h-7 flex-center font-semibold text-xs text-white hover:cursor-pointer">
             SS
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Sidebar() {
           <div className="bg-white pb-5 flex gap-4 px-2.5">
             <div className="border border-[#0000001F] flex gap-[46px] items-center rounded-[12px] bg-[#FDFDFD] p-1.5">
               <div className="flex gap-2 items-center">
-                <div className="flex-center bg-[#309E96] text-xs p-[5px] font-semibold text-white  rounded-[7px]">
+                <div className="flex-center bg-[#309E96] text-xs p-[5px] font-semibold text-white rounded-[7px]">
                   SS
                 </div>
                 <p className="font-semibold text-sm">Test_brand</p>

@@ -1,3 +1,4 @@
+"use client";
 import Charts from "@/components/Charts";
 import CityTable from "@/components/cityTable";
 import DateRangePicker from "@/components/DateRangePicker";
@@ -8,8 +9,10 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { ChartLine } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [enabled, setEnabled] = useState(true)
   return (
     <main className="p-5 bg-white min-h-screen flex-1">
       <section className="border border-[#EBEBEB] rounded-[10px] bg-[#FAFAFA] flex flex-col overflow-hidden">
@@ -21,7 +24,7 @@ export default function Home() {
                 <Label htmlFor="chart">
                   <ChartLine strokeWidth={1.5} color="#031B15" />
                 </Label>
-                <Switch id="chart" />
+                <Switch id="chart" checked={enabled} onCheckedChange={setEnabled}/>
               </div>
               <div className="rounded-[10px] border border-[#D9D9D9]">
                 <DateRangePicker />

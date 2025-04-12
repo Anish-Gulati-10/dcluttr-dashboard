@@ -76,7 +76,7 @@ const Charts = () => {
         </div>
       </div>
 
-      <div className="shadow-[0px_1px_0px_rgba(0,0,0,0.12)] bg-white overflow-hidden border border-[#F1F1F1] rounded-xl">
+      <div className="shadow-[0px_1px_0px_rgba(0,0,0,0.12)] bg-white overflow-hidden border border-[#F1F1F1] rounded-xl flex flex-col">
         <div className="border-b border-[#F1F1F1] p-3 flex justify-between items-center">
           <h2 className="text-[#515153] font-semibold">Top Cities</h2>
           <HoverCard>
@@ -90,7 +90,7 @@ const Charts = () => {
             </HoverCardContent>
           </HoverCard>
         </div>
-        <div className="p-3 flex flex-col gap-3">
+        <div className="p-3 flex flex-col gap-3 flex-1">
           {/* <DonutChartCard /> */}
           <DonutChart />
         </div>
