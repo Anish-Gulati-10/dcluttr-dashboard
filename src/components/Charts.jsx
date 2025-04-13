@@ -15,7 +15,7 @@ const Charts = () => {
           <h2 className="text-[#515153] font-semibold">Sales (MRP)</h2>
           <HoverCard>
             <HoverCardTrigger asChild>
-              <CircleHelp size={20} color="#031B15" />
+              <CircleHelp size={20} color="#031B15" className="hover:fill-[#1D874F]/20 hover:cursor-pointer"/>
             </HoverCardTrigger>
             <HoverCardContent className="w-80">
               <p className="text-sm text-[#515153] font-normal">
@@ -48,7 +48,7 @@ const Charts = () => {
           <h2 className="text-[#515153] font-semibold">Total Quantity Sold</h2>
           <HoverCard>
             <HoverCardTrigger asChild>
-              <CircleHelp size={20} color="#031B15" />
+              <CircleHelp size={20} color="#031B15" className="hover:fill-[#1D874F]/20 hover:cursor-pointer"/>
             </HoverCardTrigger>
             <HoverCardContent className="w-80">
               <p className="text-sm text-[#515153] font-normal">
@@ -81,7 +81,7 @@ const Charts = () => {
           <h2 className="text-[#515153] font-semibold">Top Cities</h2>
           <HoverCard>
             <HoverCardTrigger asChild>
-              <CircleHelp size={20} color="#031B15" />
+              <CircleHelp size={20} color="#031B15" className="hover:fill-[#1D874F]/20 hover:cursor-pointer"/>
             </HoverCardTrigger>
             <HoverCardContent className="w-80">
               <p className="text-sm text-[#515153] font-normal">

@@ -78,7 +78,7 @@ export default function Sidebar() {
               </HoverCard>
             );
           })}
-          <div className="border-[0.5px] border-[#B4BBB9] rounded-[12px] flex-center p-2.5">
+          <div className="border-[0.5px] border-[#B4BBB9] rounded-[12px] flex-center p-2.5 hover:cursor-pointer hover:bg-[#139C53]/20">
             <Image src={plus} alt="add more brands" />
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function Sidebar() {
           <div className="bg-white pb-5 flex gap-4 px-2.5">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <div className="border border-[#0000001F] flex gap-[46px] items-center rounded-[12px] bg-[#FDFDFD] p-1.5">
+                <div className="border border-[#0000001F] flex gap-[46px] items-center rounded-[12px] bg-[#FDFDFD] p-1.5 hover:cursor-pointer">
                   <div className="flex gap-2 items-center">
                     <div className="flex-center bg-[#309E96] text-xs p-[5px] font-semibold text-white rounded-[7px]">
                       SS
